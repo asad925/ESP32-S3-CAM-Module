@@ -1,0 +1,17 @@
+⚠️ Important Configuration
+
+Before compiling and uploading the code, configure the correct camera model and board settings.
+
+In your sketch, uncomment:
+
+#define CAMERA_MODEL_ESP32S3_EYE // Has PSRAM
+
+
+In the Arduino IDE, select:
+
+Board: ESP32 S3 Dev Module
+
+PSRAM: Enabled
+
+These settings are required for correct pin mapping, camera operation, and stable image buffering.
+Using different options may cause camera initialization failures or boot issues.
